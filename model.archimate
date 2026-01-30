@@ -9,6 +9,7 @@
     <element xsi:type="archimate:ApplicationComponent" name="App" id="id-fc2cd343c2934dfdb93d06960b81070c">
       <property key="passport.url" value="https://cfl.mara.local/display/SRV/APP"/>
     </element>
+    <element xsi:type="archimate:ApplicationComponent" name="ServiceX" id="id-6e4bf206b5764e939b023d660aff0e4f"/>
   </folder>
   <folder name="Technology &amp; Physical" id="id-33ea37397b6d4b5489d1021aad1f6c65" type="technology"/>
   <folder name="Motivation" id="id-ec6798d8856742598c8ce77d3997f873" type="motivation"/>
@@ -16,17 +17,22 @@
   <folder name="Other" id="id-8aec4559c1cd4d8f8199d19bf090e36b" type="other"/>
   <folder name="Relations" id="id-0ca147b7320f4dc7aa5a0f5eaf5defb8" type="relations">
     <element xsi:type="archimate:ServingRelationship" id="id-849bf4b25f05477e9729a1f5f4ad14ad" source="id-636915e62b594f8c9132d76f5216c00e" target="id-fc2cd343c2934dfdb93d06960b81070c"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="id-af92a6cbe4254d2d8b233658c2db9321" source="id-fc2cd343c2934dfdb93d06960b81070c" target="id-6e4bf206b5764e939b023d660aff0e4f"/>
   </folder>
   <folder name="Views" id="id-89a5673a0bef4124b0769affa9033175" type="diagrams">
-    <element xsi:type="archimate:ArchimateDiagramModel" name="Default View" id="id-f0a683ac8d8c455cb4c733eb8aeb72b8">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Default View" id="id-f0a683ac8d8c455cb4c733eb8aeb72b8" connectionRouterType="2">
       <child xsi:type="archimate:DiagramObject" id="id-63189b383ba8422699426a00f298f6e8" archimateElement="id-636915e62b594f8c9132d76f5216c00e">
-        <bounds x="168" y="156" width="120" height="55"/>
+        <bounds x="252" y="156" width="120" height="55"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-ea69588d6f214ca395318d36a79aed67" source="id-63189b383ba8422699426a00f298f6e8" target="id-eca05163791a4b49a218e2214b336c59" archimateRelationship="id-849bf4b25f05477e9729a1f5f4ad14ad">
           <bendpoint startX="84" startY="-3" endX="-207" endY="-5"/>
         </sourceConnection>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-eca05163791a4b49a218e2214b336c59" targetConnections="id-ea69588d6f214ca395318d36a79aed67" archimateElement="id-fc2cd343c2934dfdb93d06960b81070c">
-        <bounds x="468" y="156" width="120" height="55"/>
+        <bounds x="456" y="156" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-f4ee81b38cc2471ea5f542631081f577" source="id-eca05163791a4b49a218e2214b336c59" target="id-eb080ba2d9c74b35b948f2e4fba2a5e0" archimateRelationship="id-af92a6cbe4254d2d8b233658c2db9321"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-eb080ba2d9c74b35b948f2e4fba2a5e0" targetConnections="id-f4ee81b38cc2471ea5f542631081f577" archimateElement="id-6e4bf206b5764e939b023d660aff0e4f">
+        <bounds x="756" y="156" width="120" height="55"/>
       </child>
     </element>
   </folder>
