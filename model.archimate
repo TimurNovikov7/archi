@@ -3,8 +3,12 @@
   <folder name="Strategy" id="id-85d6f98fcfae452db650fb99388bf002" type="strategy"/>
   <folder name="Business" id="id-8c732fc7b3b645b78923ec3a3165797b" type="business"/>
   <folder name="Application" id="id-7b6ef6976bc143449519343353cfe7ff" type="application">
-    <element xsi:type="archimate:ApplicationComponent" name="ServiceA" id="id-636915e62b594f8c9132d76f5216c00e"/>
-    <element xsi:type="archimate:ApplicationComponent" name="ServiceB" id="id-fc2cd343c2934dfdb93d06960b81070c"/>
+    <element xsi:type="archimate:ApplicationComponent" name="PunterService" id="id-636915e62b594f8c9132d76f5216c00e">
+      <property key="passport.url" value="https://cfl.mara.local/display/SRV/PunterService"/>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="App" id="id-fc2cd343c2934dfdb93d06960b81070c">
+      <property key="passport.url" value="https://cfl.mara.local/display/SRV/APP"/>
+    </element>
   </folder>
   <folder name="Technology &amp; Physical" id="id-33ea37397b6d4b5489d1021aad1f6c65" type="technology"/>
   <folder name="Motivation" id="id-ec6798d8856742598c8ce77d3997f873" type="motivation"/>
